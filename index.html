@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barebones Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="table.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -13,38 +15,81 @@
             <h1>
                 Hi, I am Saravanan Vijayamuthu
             </h1>
-            <img src="https://avatars1.githubusercontent.com/u/59595314?s=400&u=6fbcdb3b5d3526790f1d235b80138f6ae0eb7b76&v=4"
-                alt="Saravanan Vijayamuthu" width="10%">
+            <img src="59595314.jpg"
+                alt="Saravanan Vijayamuthu" width="12%" style="margin-top: 10px;" >
         </header><br>
         <div>
-            <table border="1px" align="center">
-                <tr>
-                    <th>NAME</th>
-                    <th>AGE</th>
-                    <th>College</th>
-                </tr>
-                <tr>
-                    <td>Saravanan Vijayamuthu</td>
-                    <td>21</td>
-                    <td>Sri Krishna College of Engineering & Technology</td>
-                </tr>
-            </table><br><br>
-            Contact me:<form action="">
-                <input type="text" placeholder="first name" id="fname" name="fname"><br><br>
-                <input type="text" placeholder="last name" id="lname" name="lname"><br><br>
-                <input type="email" name="email" id="email" placeholder="email"><br><br>
-                <input type="number" name="number" id="number" placeholder="enter your number"><br><br>
-                <input type="button" value="submit">
-            </form><br>
-            <video width="340" controls>
-                <source src="videoplayback.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <footer>
-            Designed by: Saravanan Vijayamuthu
-        </footer>
-    </div>
+            <div class="limiter">
+                <div class="container-table100">
+                    <div class="wrap-table100">
+                        <div class="table">
+                            <div class="row header">
+                                <div class="cell">
+                                    Full Name
+                                </div>
+                                <div class="cell">
+                                    Age
+                                </div>
+                                <div class="cell">
+                                    Job Title
+                                </div>
+                                <div class="cell">
+                                    Location
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="cell" data-title="Full Name">
+                                    Saravanan Vijayamuthu
+                                </div>
+                                <div class="cell" data-title="Age">
+                                    20
+                                </div>
+                                <div class="cell" data-title="Job Title">
+                                    Full Stack Developer
+                                </div>
+                                <div class="cell" data-title="Location">
+                                    India
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-wrap">
+                            <div class="login-html">
+                                <input id="tab-2" type="radio" name="tab" class="sign-up">
+                                <label for="tab-2" class="tab" style="margin-left: auto; margin-right: auto;">Enter your details</label>
+                                <div class="login-form">
+                                    <div class="sign-up-htm">
+                                        <div class="group">
+                                            <label for="fname" class="label">First Name</label>
+                                            <input id="fname" type="text" class="input">
+                                        </div>
+                                        <div class="group">
+                                            <label for="lname" class="label">Last Name</label>
+                                            <input id="lname" type="text" class="input">
+                                        </div>
+                                        <div class="group">
+                                            <label for="email" class="label">Email</label>
+                                            <input id="email" type="email" class="input" data-type="email">
+                                        </div>
+                                        <div class="group">
+                                            <label for="Number" class="label">Number</label>
+                                            <input id="number" type="number" class="input" data-type="number">
+                                        </div>
+                                        <div class="group">
+                                            <input type="submit" class="button" value="Submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <video class="video" width="50%" style="margin-left: auto; margin-right: auto;" controls>
+                        <source src="videoplayback.mp4" type="video/mp4">
+                    </video>
+                    </div>
+                    </div>
+                        </div>
+                        <footer><a href="https://saravananvijayamuthu.herokuapp.com/" class="button b-red" target="_blank">By Saravanan Vijayamuthu</a></footer>
+                    </div>
 </body>
 
 </html>
